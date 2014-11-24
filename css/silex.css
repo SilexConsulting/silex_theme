@@ -6,6 +6,12 @@ body {
     padding: 0;
 }
 
+.page-header {
+    padding-bottom: 9px;
+    margin: 60px 0 30px;
+    border-bottom: 1px solid #eeeeee;
+}
+
 #OUR-TEAM-CAROUSEL
 .jcarousel-skin-default .jcarousel-item-horizontal{
     border:0;
@@ -115,7 +121,7 @@ body {
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
     width: 100%;
-    position: fixed;
+position: fixed;
     z-index: 10;
 }
 .navbar-wrapper div {
@@ -123,7 +129,7 @@ body {
 }
 
 .navbar-wrapper .span3.callus {
-    margin-left: 25px;
+    margin-left: 5px;
 }
 
 /* Remove border and change up box shadow for more contrast */
