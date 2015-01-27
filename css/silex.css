@@ -1,9 +1,28 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 body {
-color: #6a6a6a;
-font-size: 13px;
-padding: 0;
+    color: #6a6a6a;
+    font-size: 13px;
+    padding: 0;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 60px 0 30px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+#OUR-TEAM-CAROUSEL
+.jcarousel-skin-default .jcarousel-item-horizontal{
+    border:0;
+}
+.jcarousel-skin-default .jcarousel-item{
+    height: auto;
+    width:auto;
+}
+
+.node-our-team img{
+    float:right;
 }
 
 #flex-box{
@@ -18,25 +37,25 @@ padding: 0;
 }
 
 .logo  {
-font-size: 13px;
-line-height: 1.5em;
-margin: 0;
-height: auto;
+    font-size: 13px;
+    line-height: 1.5em;
+    margin: 0;
+    height: auto;
 }
 
 .logo img {
-padding-top: 7px;
+    padding-top: 7px;
 }
 
 .callus {
-  line-height: 1.8em;
-  padding-top: 10px;
+    line-height: 1.8em;
+    padding-top: 10px;
 }
 
 .footer {
-    margin-top:0;
     background-color: #1B1B1B;
-    padding: 45px 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align:center;
     min-width:100%;
 
@@ -46,18 +65,18 @@ padding-top: 7px;
 }
 
 .footer .links-horizontal li {
-float: left;
-margin-right: 20px;
+    float: left;
+    margin-right: 20px;
 }
 .footer ul {
-list-style: none;
-margin: 0px;
+    list-style: none;
+    margin: 0px;
 }
 .footer a {
-color: #999;
+    color: #999;
 }
 .footer a.active {
-color: #999;
+    color: #999;
 }
 .footer .row {
     padding-bottom: 9px;
@@ -65,74 +84,78 @@ color: #999;
 
 
 .twitter-link {
-background-image: url('../images/icons/twitter.png');
-background-repeat: no-repeat;
-background-position: left center;
-display: inline;
-height: 16px;
-width: 16px;
-padding: 8px 8px 8px 16px;
-opacity: 0.4;
-filter: alpha(opacity=40);
+    background-image: url('../images/icons/twitter.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: inline;
+    height: 16px;
+    width: 16px;
+    padding: 8px 8px 8px 16px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
 }
 
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 @media(min-width: 980px) {
-  body.toolbar { padding-top: 30px !important; }
-  body.toolbar-drawer { padding-top: 65px !important; }
+    body.toolbar { padding-top: 30px !important; }
+    body.toolbar-drawer { padding-top: 65px !important; }
 }
 
 .navbar-inverse .navbar-inner {
 
-  background: #1b1b1b;
-  background: rgba(0, 0, 0, 0.85);;
-  background-image: none;
-  -webkit-border-radius: 0;
-     -moz-border-radius: 0;
-          border-radius: 0;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
-  *zoom: 1;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    background: #1b1b1b;
+    background: rgba(0, 0, 0, 0.85);;
+    background-image: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+    *zoom: 1;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-width: 100%;
-position: relative;
-z-index: 10;
+    width: 100%;
+position: fixed;
+    z-index: 10;
 }
 .navbar-wrapper div {
-margin:0;
+    margin:0;
+}
+
+.navbar-wrapper .span3.callus {
+    margin-left: 5px;
 }
 
 /* Remove border and change up box shadow for more contrast */
 .navbar .navbar-inner {
-border: 0;
--webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
--moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    border: 0;
+    -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    box-shadow: 0 2px 10px rgba(0,0,0,.25);
 }
 
 /* Navbar links: increase padding for taller navbar */
 .navbar .nav > li > a {
-padding: 10px 20px;
-float: right;
-background-color: #1B1B1B;
+    padding: 10px 20px;
+    float: right;
+    background-color: #1B1B1B;
 }
 .navbar .nav .active > a, .navbar .nav .active > a:hover{
-  background-color: #1B1B1B;
+    background-color: #1B1B1B;
 }
 .navbar .nav .highlight-item a {
- color: #009adf;
+    color: #009adf;
 }
 
 /* Offset the responsive button for proper vertical alignment */
 .navbar .btn-navbar {
-margin-top: 10px;
+    margin-top: 10px;
 
 }
 
@@ -143,50 +166,59 @@ margin-top: 10px;
 
 /* Carousel base class */
 .carousel {
-margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .carousel .container {
-position: absolute;
-right: 0;
-bottom: 0;
-left: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .carousel-control {
-background-color: transparent;
-border: 0;
-font-size: 120px;
-margin-top: 0;
-text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    background-color: transparent;
+    border: 0;
+    font-size: 120px;
+    margin-top: 0;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
 }
 
 .carousel .item {
-height: auto;
+    height: auto;
 }
 .carousel img {
-min-width: 100%;
-height: auto;
+    min-width: 100%;
+    height: auto;
 }
 
 .carousel-caption {
-background-color: transparent;
-position: static;
-max-width: 550px;
-padding: 0 40px;
-margin-bottom: 100px;
+    background-color: transparent;
+    position: static;
+    width:100%;
+    padding: 5px;
+    margin-bottom: 100px;
     vertical-align: middle;
+    text-align: center;
 }
-.carousel-caption h1,
+.carousel-caption h1{
+    padding: 5px;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+
 .carousel-caption .lead {
-padding-bottom: 15px;
-margin: 0;
-line-height: 1.25;
-color: #fff;
-text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.9);
+    background: rgba(0,109,204,0.1);
+    border-radius: 100px;
 }
 .carousel-caption .btn {
-margin-top: 10px;
+    margin-top: 10px;
 }
 
 
@@ -196,20 +228,21 @@ margin-top: 10px;
 
 /* Center align the text within the three columns below the carousel */
 .container .span4 {
-text-align: center;
+    text-align: center;
+    margin-top:15px;
 }
 .container h2 {
-font-weight: normal;
+    font-weight: normal;
 }
 .container .span4 p {
-margin-left: 10px;
-margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.promo h2 a, 
+.promo h2 a,
 .promo p a {
-  color: #6a6a6a;
-  text-decoration: none;
+    color: #6a6a6a;
+    text-decoration: none;
 }
 
 
@@ -217,30 +250,30 @@ margin-right: 10px;
 ------------------------- */
 
 .featurette-divider {
-margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
 .featurette {
-padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+    overflow: hidden; /* Vertically center images part 2: clear their floats. */
 }
 .featurette-image {
-margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
 }
 
 /* Give some space on the sides of the floated elements so text doesn't run right into it. */
 .featurette-image.pull-left {
-margin-right: 40px;
+    margin-right: 40px;
 }
 .featurette-image.pull-right {
-margin-left: 40px;
+    margin-left: 40px;
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
-font-size: 50px;
-font-weight: 300;
-line-height: 1;
-letter-spacing: -1px;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
 }
 
 
@@ -259,79 +292,79 @@ letter-spacing: -1px;
 
     .carousel img {
         width: auto;
-        min-height: 565px;
+        min-height: 650px;
     }
 }
 
 @media (max-width: 979px) {
 
-.container.navbar-wrapper {
-margin-bottom: 0;
-}
-.navbar-inner {
-border-radius: 0;
-margin: -20px 0;
-}
+    .container.navbar-wrapper {
+        margin-bottom: 0;
+    }
+    .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+    }
 
-.carousel .item {
-height: auto;
-}
-.carousel img {
-width: auto;
-height: 711px;
-}
+    .carousel .item {
+        height: auto;
+    }
+    .carousel img {
+        width: auto;
+        height: 711px;
+    }
 
-.featurette {
-height: auto;
-padding: 0;
-}
-.featurette-image.pull-left,
-.featurette-image.pull-right {
-display: block;
-float: none;
-max-width: 40%;
-margin: 0 auto 20px;
-}
+    .featurette {
+        height: auto;
+        padding: 0;
+    }
+    .featurette-image.pull-left,
+    .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+    }
 }
 
 
 @media (max-width: 767px) {
 
-.navbar-inner {
-margin: -20px;
-}
+    .navbar-inner {
+        margin: -20px;
+    }
 
-.carousel {
+    .carousel {
 
-}
-.carousel .container {
+    }
+    .carousel .container {
+        margin:auto;
+    }
+    .carousel .item {
+        height: 300px;
+    }
+    .carousel img {
+        height: 571px;
+    }
+    .carousel-caption {
+        width: 100%;
+        margin:auto;
+    }
+    .carousel-caption h1 {
+        font-size: 30px;
+        vertical-align: middle;
+    }
+    .carousel-caption .lead,
+    .carousel-caption .btn {
+        font-size: 18px;
+    }
+    .marketing .span4 + .span4 {
+        margin-top: 40px;
+    }
 
-}
-.carousel .item {
-height: 300px;
-}
-.carousel img {
-height: 571px;
-}
-.carousel-caption {
-width: 65%;
-padding: 0 70px;
-margin-bottom: 40px;
-}
-.carousel-caption h1 {
-font-size: 30px;
-}
-.carousel-caption .lead,
-.carousel-caption .btn {
-font-size: 18px;
-}
-.marketing .span4 + .span4 {
-margin-top: 40px;
-}
-
-.featurette-heading {
-font-size: 30px;
-}
+    .featurette-heading {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 600px){
