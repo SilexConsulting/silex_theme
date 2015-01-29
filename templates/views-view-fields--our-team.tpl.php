@@ -25,10 +25,15 @@
  */
 ?>
 <div>
-    <?php if (!empty( $fields['field_image'])): ?>
-        <?php print $fields['field_image']->content ?>
+    <?php if (!empty($fields['field_image_silly']->content) && $_GET['silly'] == 'very'): ?>
+        <?php if (!empty( $fields['field_image_silly'])): ?>
+            <?php print $fields['field_image_silly']->content ?>
+        <?php endif; ?>
+    <?php else: ?>
+        <?php if (!empty( $fields['field_image'])): ?>
+            <?php print $fields['field_image']->content ?>
+        <?php endif; ?>
     <?php endif; ?>
-    <!-- <img src="https://farm9.staticflickr.com/8461/8048823381_0fbc2d8efb.jpg" alt=""/>-->
     <?php if (!empty( $fields['title'])): ?>
         <h1><?php print $fields['title']->content ?></h1>
     <?php endif; ?>
