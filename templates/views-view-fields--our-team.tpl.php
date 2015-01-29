@@ -25,7 +25,7 @@
  */
 ?>
 <div>
-    <?php if (!empty($fields['field_image_silly']->content) && $_GET['silly'] == 'very'): ?>
+    <?php if (!empty($fields['field_image_silly']->content) && !empty($_GET['silly']) && $_GET['silly'] == 'very'): ?>
         <?php if (!empty( $fields['field_image_silly'])): ?>
             <?php print $fields['field_image_silly']->content ?>
         <?php endif; ?>
