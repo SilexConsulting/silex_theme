@@ -1,4 +1,15 @@
 <?php
+
+/**
+ * Preprocess function for html
+ *
+ * @param $variables
+ */
+function silex_preprocess_html(&$variables){
+    drupal_add_css('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800', array('type' => 'external'));
+    drupal_add_css('http://fonts.googleapis.com/css?family=Raleway:400,700,300,200,100,900', array('type' => 'external'));
+    drupal_add_css('http://fonts.googleapis.com/css?family=Amatic+SC:400,700', array('type' => 'external'));
+}
 /**
  * Preprocess variables for page.tpl.php
  *
@@ -27,18 +38,4 @@ function silex_preprocess_page(&$variables) {
   
   // Replace tabs with dropw down version
   $variables['tabs']['#primary'] = _twitter_bootstrap_local_tasks($variables['tabs']['#primary']);
-}
-
-function spv($vars){
-  print "################################# DEFINED VARS #################################\n";
-  foreach ($vars as $var => $val ){
-    $type = gettype($val);
-    if ($type == 'string'){
-     $disp = "\"$val\"";
-    } else { 
-      $disp = $type;
-    }
-    print("->>>>>> $var = $disp\n");
-  }
-  print "############################### END DEFINED VARS ###############################\n";
 }
