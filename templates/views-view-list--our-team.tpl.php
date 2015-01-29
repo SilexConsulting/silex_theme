@@ -12,7 +12,7 @@
 <?php print $list_type_prefix; ?>
 <?php foreach ($rows as $id => $row): ?>
     <li class="<?php print $classes_array[$id]; ?>"><?php print $row; ?></li>
-    <?php if( in_array($id,arryay(2,5,8))):?>
+    <?php if( in_array($id,array(2,5,8))):?>
     <!--<li class=""pusher"></li>-->
     <?php endif; ?>
 <?php endforeach; ?>
